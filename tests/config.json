@@ -1,0 +1,5 @@
+{
+  "browser": "firefox",
+  "supported-browsers": ["chrome", "firefox"],
+  "env": "dev"
+}
