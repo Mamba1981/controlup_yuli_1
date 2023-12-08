@@ -4,8 +4,9 @@ from core.load_config import get_config
 from core.driver_manager import get_driver
 from pages.login_page import LoginPage
 from core.login_data_vars import *
+import logging
 
-
+logging.basicConfig(level=logging.DEBUG)
 # enables selecting browser (currently FF only)
 def pytest_addoption(parser):
     parser.addoption("--bro", action="store", default=None, help="please choose browser: --bro=<browser>")
